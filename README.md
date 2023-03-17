@@ -5,14 +5,14 @@
 <p align="center"><a href="#install">模块打包</a> · <a href="#tall">使用说明</a> · <a href="#notice">字典规则</a> · <a href="#communicate">技术交流</a></p>
 
 <div id="install"></div>
-### 模块打包
+<h3>模块打包</h3>
 ```bash
 go mod tidy # 安装依赖库
 go build .
 ```
 如果没有二开或自行打包需要的，可以直接从release下载打包好的文件即可
 <div id= "tall"></div>
-### 使用说明
+<h3>使用说明</h3>
 此项目的开发初衷是在渗透测试过程中没有突破点时，可以根据信息收集下的密码生成字典来进行登录爆破，寻找新的突破口。这里是通过命令行输入生成所需要的参数来生成一个全面的字典。
 <p>这里我们来看一下参数，这里我们看看图：</p>
 <div><img src="img1.png"></div>
@@ -28,9 +28,8 @@ go build .
 <li>公司主域名,如baidu.com 【tsrc.com】     (输入一级域名即根域即可)</li>
 </ul>
 <div id="notice"></div>
-### 字典规则
+<h3>字典规则</h3>
 <ul>
-
 <li>姓名全拼(小写) + 弱口令</li>
 <li>姓名全拼(小写) + "@/#" + 弱口令</li>
 <li>姓名全拼(小写) + 域名 ( + "!#." )</li>
@@ -108,7 +107,7 @@ go build .
 </ul>
 <div id="communicate"></div>
 
-### 技术交流
+<h3>技术交流</h3>
 
 <img src="https://cdn.jsdelivr.net/gh/z-bool/images@master/img/qrcode_for_gh_c90beef1e2e7_258.jpg" alt="阿呆攻防公众号" style="zoom:100%;" />![image-20230116173105809](https://cdn.jsdelivr.net/gh/z-bool/images@master/img/image-20230116173105809.png)
 
