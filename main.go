@@ -445,6 +445,30 @@ func main() {
 	if answer.HuaMing != "" {
 		usernameCompare(strings.ToLower(answer.HuaMing), answer.GongSiDomain, answer.GongSiQuanChen, answer.GongSiJianChen)
 	}
+	if answer.GongSiDomain != "" {
+		for _, str := range weakPassword {
+			result = append(result, answer.GongSiDomain+str)
+			result = append(result, answer.GongSiDomain+"@"+str)
+			result = append(result, answer.GongSiDomain+"#"+str)
+		}
+	}
+	if answer.GongSiQuanChen != "" {
+		for _, str := range weakPassword {
+			result = append(result, strings.ToLower(answer.GongSiQuanChen)+str)
+			result = append(result, strings.ToLower(answer.GongSiQuanChen)+"@"+str)
+			result = append(result, strings.ToLower(answer.GongSiQuanChen)+"#"+str)
+		}
+	}
+	if answer.GongSiJianChen != "" {
+		for _, str := range weakPassword {
+			result = append(result, strings.ToLower(answer.GongSiJianChen)+str)
+			result = append(result, strings.ToLower(answer.GongSiJianChen)+"@"+str)
+			result = append(result, strings.ToLower(answer.GongSiJianChen)+"#"+str)
+			result = append(result, strings.ToUpper(answer.GongSiJianChen)+str)
+			result = append(result, strings.ToUpper(answer.GongSiJianChen)+"@"+str)
+			result = append(result, strings.ToUpper(answer.GongSiJianChen)+"#"+str)
+		}
+	}
 	for _, str := range result {
 		WriteWeakPassword(str + "\r\n")
 	}
