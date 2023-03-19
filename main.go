@@ -8,12 +8,18 @@ import (
 )
 
 var WeakNum = []string{
+	"1",
+	"2",
+	"12",
+	"11",
+	"22",
 	"000",
 	"0000",
 	"000000",
 	"123",
 	"1234",
 	"123456",
+	"123123",
 	"111",
 	"1111",
 	"111111",
@@ -53,6 +59,7 @@ var WeakString = []string{
 	"user",
 	"test",
 	"love",
+	"super",
 }
 
 var weakPasswordWithoutChar = []string{}
