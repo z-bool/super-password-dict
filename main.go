@@ -58,6 +58,7 @@ var WeakString = []string{
 	"Admin",
 	"user",
 	"test",
+	"guest",
 	"love",
 	"super",
 }
@@ -119,6 +120,11 @@ var qs = []*survey.Question{
 }
 
 var result = []string{
+	"user",
+	"admin",
+	"test",
+	"guest",
+	"AaBbCc",
 	"Abc123!@#",
 	"@bcd1234",
 	"abc123!@#",
