@@ -1,4 +1,4 @@
-# Super-Password-Dict 泰坦超级密码字典
+# Super-Password-Dict 毒液超级密码字典
 **郑重声明：文中所涉及的技术、思路和工具仅供以安全为目的的学习交流使用，<u>任何人不得将其用于非法用途以及盈利等目的，否则后果自行承担</u>** 。
 <p align="center"><a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-_red.svg"></a><a href="https://github.com/z-bool/super-password-dict"><img  src="https://goreportcard.com/badge/github.com/projectdiscovery/httpx"></a></p>
 
